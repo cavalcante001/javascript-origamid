@@ -1,10 +1,39 @@
-function Carro(marcaAtribuida, precoAtribuido) {
-    this.marca = marcaAtribuida;
-    this.preco = precoAtribuido;
+function Pessoa(nome, idade) {
+    this.nome = nome;
+    this.idade = idade;
+    this.andar = function() {
+        console.log(nome + 'Andou');
+    }
 }
 
-const honda = new Carro('Honda', 3000); //Carro construtor de honda
-                           //honda é um objeto que vem do construtor carro, só por termos colocado new na frente
-                          //this é simplismente o objeto carro
-const fiat = new Carro('Fiat', 4000);   
-fiat.marca = 'Fiat';
+// Crie 3 pessoas, João - 20 anos,
+// Maria - 25 anos, Bruno - 15 anos 
+
+const joao = new Pessoa('João', 20);
+const maria = new Pessoa('Maria', 25);
+const bruno = new Pessoa('Bruno', 15);
+
+function Dom(seletor) {
+    const elementList = document.querySelectorAll(seletor);
+    this.elements = elementList;
+    this.addClass = function(classe) {
+        elementList.forEach((element) => {
+            element.classList.add(classe);
+        });
+    }
+    this.removeClass = function(classe) {
+        elementList.forEach((element) => {
+            element.classList.remove(classe);
+        });
+    }
+}
+
+const listaItens = new Dom('li');
+
+// Crie uma Constructor Function (Dom) para manipulação
+// de listas de elementos dom. Deve conter as seguintes
+// propriedades e métodos:
+//
+// elements, retorna NodeList com os elementos selecionados
+// addClass(classe), adiciona a classe a todos os elementos
+// removeClass(classe), remove a classe a todos os elementos
