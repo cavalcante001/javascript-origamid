@@ -1,0 +1,32 @@
+Word
+
+o \w irá selecionar qualquer caracter alfanumérico e o underline.
+É a mesma coisa que [A-Za-z0-9_]
+\W nega
+
+\d tudo que é digito
+\D nega
+
+\s tudo que for espaço, quebra de linha ou tab
+\S nega
+
+Mais + significa que devemos selecionar quando existir pelo menos uma ou mais ocorrências.
+
+O sinal de * significa que devemos selecionar quando existir 0 ou mais ocorrências
+
+? significa que o caracter é opcional, pode ou não existir
+
+alternado | ou um ou outro
+
+\b word boundary
+irá indicar que pretendemos fazer uma seleção que deve ter início e fim de não caracteres \w
+
+Anchor Beginning ^
+Anchor End $
+
+\m multiline
+
+Line feed
+\n irá selecionar o final de uma linha quando criamos uma nova
+
+\u unicode

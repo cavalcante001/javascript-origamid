@@ -1,0 +1,65 @@
+// Regular Expression
+
+// Regexp ou regex são expressões utilizadas para realizarmos buscas / substituições de padrões em strings. Os padrões devem ser colocados entre //. Geralmente vamos utilizá-las nos métodos .replace() e .split().
+
+//procura a
+
+const padraoRegex = /a/;
+const texto = 'Javascript';
+const novoTexto = texto.replace(padraoRegex, 'B');
+
+// Utilizar um caracter literal irá realizar uma busca específica deste caracter.
+
+const regexp = /java/
+'Javascript'.replace(regexp, 'Type');
+// TypeScript
+
+// Flag: g
+// As flags irão modificar como a expressão é interpretada. Uma das mais utilizadas é a g, que significa global, ou seja, retorne todos os resultados que estiverem dentro do padrão e não apenas o primeiro. A flag deve ser colocada no final da expressão.
+
+// Procura todo a
+const regexp = /a/g;
+'Javascript'.replace(regexp, 'i');
+//Jiviscript
+
+// Flag: i
+// Com o i informamos que devem ser ignoradas as diferenças entre maiúsculas e minúsculas. Isso significa que /a/ irá buscar por a e A
+
+// Procura: todo PE, pe, pE, e pe
+const regexp = /Pe/gi;
+'Perdeu perdido'.replace(regexp, 'Ba');
+// Bardeu bardido
+
+
+// Character Class
+
+// Se colocarmos os caracteres entre colchetes, estamos definindo uma classe /[ab]/ irá procurar por a ou por b
+
+//Procura por todo a, A, i, I
+const regexp = /[ai]/gi;
+'Javascript'.replace(regexp, 'u');
+// Javuscrupt
+
+
+// Podemos utilizar caracteres que não são alfanuméricos dentro da classe. Mas fique atento, pois existem diversos casos especiais para os mesmos.
+
+// Procura:  - ou .
+const regexp = /[-.]/g;
+'111.222.333.44'.replace(regexp, '');
+//11122233344
+
+// De A à Z
+// O traço - dentro de [] pode servir para definirmos um alcance. [A-Z] irá buscar os caracteres de A à Z. [0-9] busca de 0 a 9. A tabela unicode é utilizada como referência para definir os caracteres dentro do alcance
+
+//Negar
+//Utilizando o acento circunflêxo podemos negar caracteres. Ou seja, pegue tudo que não seja [^a]
+
+// Procura: tudo que não estiver entre a e z
+const regexp = /[^a-z]/g;
+
+'Brasil é com z: Brazil'.replace(regexp, '');
+// rasil é com z: razil
+
+// O ponto . irá selecionar qualquer caractere, menos quebras de linha.
+
+//Caracteres especiais como o . podem ser escapados utilizando a barra \. assim ele não terá mais a sua função especial e será tratado como literal. Lista de caracteres especiais: + * ^ $ . [] {} () | /

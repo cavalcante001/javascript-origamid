@@ -1,0 +1,25 @@
+// $& referência as palavras encontradas
+
+// Grupo de captura
+
+// É possível definirmos diferentes grupos de captura, que poderão ser referenciados durante a substituição. Basta envolvermos um grupo entre () parênteses. A referência de cada grupo será feita com $n, sendo o primeiro $1
+
+// () grupo de captura (sequência)
+
+// Positive Lookahead
+// Faz a seleção dos itens que possuírem o padrão dentro de (?=) à sua frente.
+// Apesar de utilizar () parênteses o positive lookahead não captura grupo
+
+// Procura: dígitos em sequência, que
+// possuírem px, sem selecionar o px
+const regexp = /\d(?=px)/g;
+'2em, 4px, 5%, 2px 1px'.replace(regexp, 'X');
+// 2em, Xpx, 5%, Xpx, Xpx
+
+Negative lookahead
+
+faz a seleção dos itens que não possuírem o padrão dentro de (?!) à sua frente
+
+const regexp = /\d(?!px)/g;
+'2em, 4px, 5%, 5px 1px'.replace(regexp, 'X');
+// Xem, 4px, X%, 5px, 1px
