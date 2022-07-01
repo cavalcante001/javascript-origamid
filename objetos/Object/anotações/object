@@ -1,0 +1,13 @@
+Object
+
+Todo objeto é criado com o construtor Object e por isso herda as propriedades e métodos do seu prototype.
+
+const Carro = {
+    marca: 'Ford',
+    ano: 2018,
+}
+
+const pessoa = new Object({
+    nome: 'André',
+    idade: 28,
+})

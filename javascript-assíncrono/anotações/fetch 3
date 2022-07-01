@@ -1,0 +1,11 @@
+// Utilizando a API https://viacep.com.br/ws/${CEP}/json/
+// crie um formulário onde o usuário pode digitar o cep
+//e o endereço é retornado ao clicar em buscar
+
+//Utilizando a api https://blockchain.info/ticker
+//retorne no dom o valor de compra da bitcoin and reais
+//atualize este valor a cada 30s
+
+// Utilizando a api https://api.chucknorris.io/jokes/random
+//retorne uma piada randomica do chucknoris, toda vez que 
+//clicar em próximo

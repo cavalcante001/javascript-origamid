@@ -1,0 +1,11 @@
+O borbulhamento e a captura de eventos são termos que descrevem as fases de como o navegador lida com eventos direcionados a elementos aninhados.
+
+Você verá que o pai dispara um evento de clique quando o usuário clica no botão:
+
+Isso faz sentido: o botão está dentro do <div>, portanto, quando você clica no botão, também está clicando implicitamente no elemento que está dentro.
+
+
+
+Borbulhando e capturando explicados
+Quando um evento é disparado em um elemento que tem elementos pai (neste caso, o <video>tem <div>como pai), os navegadores modernos executam três fases diferentes — a fase de captura , a fase de destino e a fase de borbulhamento .
+

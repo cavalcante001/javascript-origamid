@@ -1,0 +1,38 @@
+body {
+    background-color: #ccc;
+}
+
+.loading {
+    background-color: rgba(0,0,0,0.3  );
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading p {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+form button {
+    margin-top: 10px;
+    cursor: pointer;
+    height: 30px;
+}

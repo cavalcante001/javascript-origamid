@@ -15,3 +15,26 @@ Button.prototype.element = function() {
 }
 
 const blueButton = new Button('Comprar', 'blue');
+
+
+class
+o ES6 trouxe nova sintaxe para implementarmos funções construtoras. Agora podemos utilizar a palavra chave class. É considerada syntactical SVGFESpecularLightingElement, pois por baixo dos panos continua utilizando o sitema de protótipos de uma função construtora para criar a classe
+
+class Button {
+    constructor(text, background) {
+        this.text = text;
+        this.background = background;
+    }
+
+    element() {
+        const buttonElement = document.createElement('button');
+        buttonElement.innerText = this.text;
+        buttonElement.style.background = this.background;
+        return buttonElement;
+    }
+}
+
+
+O método constructor(args) {} é um método especial de uma classe. Nele você irá definir todas as propriedades do objeto que será criado. Os argumentos passados em new, vão direto para o constructor
+
+Por padrão, a classe retorna this. Ou seja, this é o objeto criado com a new class. Podemos modificar isso alterando o return do constructor, o problema é que perderá toda a referência do objeto.
