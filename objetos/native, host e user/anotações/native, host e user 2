@@ -1,0 +1,22 @@
+// Liste 5 objetos nativos
+
+Object;
+String;
+Number;
+Array;
+Boolean;
+Function;
+
+// Liste 5 objetos do browser
+
+Window;
+Screen;
+Location;
+History;
+Document;
+HTMLCollection;
+NodeList;
+
+if (typeof document.webkitHidden !== "undefined") {
+  console.log("Existe");
+}

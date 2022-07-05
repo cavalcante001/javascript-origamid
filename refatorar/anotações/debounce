@@ -1,0 +1,1 @@
+o debounce irá colocar a função na fila com o settimeout e ele vai toda vez que for ativada eliminar a função anterior até que vocẽ ative apenas uma de cada vez.
