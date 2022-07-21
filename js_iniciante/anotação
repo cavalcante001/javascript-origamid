@@ -1,0 +1,3 @@
+NaN - Not a Number
+
+É possível verificar se uma variável é NaN ou não com a função isNaN();

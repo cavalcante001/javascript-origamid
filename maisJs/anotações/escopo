@@ -1,0 +1,23 @@
+// Escopo
+// Quando criamos uma função, a mesma possui acesso á todas as variáveis criadas em seu escopo e também ao escopo pai. A mesma coisa acontece para funções dentro de funções.
+
+let item1 = 1;
+
+function funcao1() {
+  let item2 = 2;
+  function funcao2() {
+    let item3 = 3;
+  }
+}
+
+//func1, possui acesso à
+//item1 e item2
+
+//func2 possui acesso à
+//item 1, item 2 e item 3;
+
+// Closures
+
+// A função 2 possui 4 escopos. O primeiro escopo é o Local, com acesso ao item3. O segundo escopo dá acesso ao item 2, esse escopo é chamado de closure(funcao1)(escopo de função dentro de função). O terceiro escopo é o script com acesso ao item1  e o quarto escopo é o Global/Window.
+
+// É possível debugarmos um código Javascript utilizando ferramentas do browser ou através do próprio Visual Studio Code. Se o código possuir qualquer Web Api, o processo deve ser feito no Browser. Plugins podem interferir no debug dentro do servidor.

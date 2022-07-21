@@ -1,0 +1,29 @@
+JavaScript Completo ES6+
+var, const, let, class, async, await, fetch, promise e mais
+
+Introdução
+Sobre a linguagem e configuração do ambiente.
+
+Javascript para iniciantes
+Dados, variáveis, operadores, boolean, funções, objetos, arrays, loops e mais
+
+DOM para Iniciantes
+início do projeto, selecionar e manipular o dom, eventos, transversing e mais.
+
+Objetos
+Constructor Functions, Prototype, Strings, Array, Math, Number, Function, Object
+
+Efeitos no DOM
+
+Modules, event bubble, setTimeout, forms e mais
+
+Javascript Assíncrono
+Promises, Fetch(novo ajax), JSON, API, HTTP, ASYNC/ Await e mais.
+
+Classes
+Class, constructor, get, set, extends e mais
+
+Mais JS
+IIFE, Factory Function, closures, debugging, destructuring, rest, iterables
+
+Regular Expression

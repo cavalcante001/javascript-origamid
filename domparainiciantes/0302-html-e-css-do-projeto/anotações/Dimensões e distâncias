@@ -1,0 +1,23 @@
+// Height e Width
+
+section.clientHeight; // height + padding;
+section.offsetHeight; // height + padding + border;
+section.scrollHeight; // height total, mesmo dentro de scroll;
+
+// offsetTop e offsetLeft
+
+// Distância entre o topo do elemento e o topo da página
+section.offsetTop;
+
+// Distância entre o canto esquerdo do elemento
+// e o canto esquerdo da página
+section.offsetLeft;
+
+// getBoundingClientHeight
+
+// método que retorna um objeto com valores de width, height, distâncias do elemento e mais.
+
+const rec = section.getBoundingClientRect();
+rec.height; //  height do elemento;
+rec.width; // width do elemento;
+rec.top; // distância entre o topo do elemento e o scroll;
