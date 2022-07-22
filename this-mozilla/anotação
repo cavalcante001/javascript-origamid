@@ -1,0 +1,22 @@
+O corportamento do `this` depende do:
+
+1. Escopo e Contexto
+2. Modo Estrito
+
+## 1 Escopo vs Contexto
+
+- Escopo (scope)
+  - **Acesso** às variáveis, funções e objetos numa parte do código, durante o tempo de execução.
+  - Determina a **visibilidade** desses recursos em alguma parte do código.
+  - Sempre que invocamos uma função, estamos criando um novo `scope`
+- Contexto (context)
+  - Enquanto o `scope` se refere às diversas variáveis, o `context` se refere ao valor de this no mesmo `scope`
+  - Pode ser mudado com funções especiais como .apply(), .call() e .bind()
+  - No contexto de execução `execution time` o contexto já não é mais esse contexto que estamos discutindo. Ele será o `scope`.
+
+1. Global
+   1. No momento que começamos a escrever código, estamos nesse contexto.
+   1. Existe enquanto existir a aplicação.
+2. Local
+   1. Dentro de alguma função, variáveis estão no escopo (contexto) local.
+   2. Existe enquanto existir a função ou objeto.
