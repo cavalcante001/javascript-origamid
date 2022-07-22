@@ -1,0 +1,9 @@
+// outerHTML, innerHTML, e innerText
+
+// Propriedades que retornam uma string contento o html ou o texto. É possível atribuir um novo valor para as mesmas.
+
+// element.innerText = 'Novo Texto';
+
+outerHtml; // todo html do elemento;
+innerHTML; //HTML interno;
+innerText; //texto, sem tags

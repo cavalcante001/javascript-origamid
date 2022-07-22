@@ -1,0 +1,10 @@
+// Element's representam um elemento html, ou seja, uma tag. Node representa um nó, e pode ser um elemento(Element), texto, comentário, quebra de linha e mais.
+
+const lista = document.querySelector(".animais-lista");
+lista.previousElementSibling; // elemento acima
+lista.previousSibling; // node acima
+
+lista.firstChild; // primeiro node child
+lista.childNodes; // todos os node child
+
+// Geralmente estamos atrás de um elemento e não de qualquer node em si.

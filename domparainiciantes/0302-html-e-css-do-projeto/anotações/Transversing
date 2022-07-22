@@ -1,0 +1,17 @@
+// Transversing
+
+// Como navegar pelo DOM, utilizando suas propriedaedes e métodos
+
+const lista = document.querySelector();
+
+lista.parentElement; // pai
+lista.parentElement.parentElement; // pai do pai;
+lista.previousElementSibling; // elemento acima;
+lista.nextElementSibling; // elemento abaixo;
+
+lista.children; // HTMLCollection com os filhos
+lista.children[0]; // primeiro filho
+lista.children[--lista.children.length];
+
+lista.querySelectorAll("li"); // todas as LI'S
+lista.querySelector("li:last-child"); //último filho

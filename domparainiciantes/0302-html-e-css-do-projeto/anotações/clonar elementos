@@ -1,0 +1,3 @@
+// todo elemento selecionado é único. Para criarmos um novo elemento baseado no anterior, é necessário utilizarmos o método cloneNode();
+
+// (true) sinaliza para incluir os filhos
